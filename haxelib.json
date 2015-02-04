@@ -1,0 +1,13 @@
+{
+  "name": "haxe-fgl",
+  "url": "https://github.com/starburst997/haxe-fgl",
+  "license": "MIT",
+  "tags": ["lime", "openfl", "html5", "fgl"],
+  "description": "Librairy to use the FGL SDK (html5) in Haxe / Lime / OpenFL",
+  "version": "1.0.0",
+  "releasenote": "Inital commit",
+  "contributors": ["failsafegames"],
+  "dependencies": {
+
+  }
+}

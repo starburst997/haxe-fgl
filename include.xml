@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+	
+	<dependency name="./fgl.js" if="html5" unless="noFGL" />
+	<template path="./dependency/fgl.js" rename="fgl.js" if="html5" />
+	
+</extension>
