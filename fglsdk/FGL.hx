@@ -10,7 +10,7 @@ class FGL
 	 */
 	public static function isBlockingOverlay():Bool
 	{
-		#if js 
+		#if (js && !noFGL)
 		return untyped fgl.isBlockingOverlay(); 
 		#else
 		return false;
@@ -27,7 +27,7 @@ class FGL
 	 */
 	public static function showAd() 
 	{
-		#if js 
+		#if (js && !noFGL)
 		untyped fgl.showAd(); 
 		#end
 	}
@@ -42,7 +42,7 @@ class FGL
 	 */
 	public static function showMoreGames() 
 	{
-		#if js 
+		#if (js && !noFGL)
 		untyped fgl.showMoreGames(); 
 		#end
 	}
@@ -59,7 +59,7 @@ class FGL
 	 */
 	public static function initiateUnlockFunction( onSuccess:Void->Void, onFailure:Void->Void ) 
 	{
-		#if js 
+		#if (js && !noFGL)
 		untyped fgl.inApp.initiateUnlockFunction( onSuccess, onFailure ); 
 		#end
 	}
@@ -79,7 +79,7 @@ class FGL
 	 */
 	public static function isPremium():Bool
 	{
-		#if js 
+		#if (js && !noFGL)
 		return untyped fgl.isPremium(); 
 		#else
 		return false;
@@ -94,7 +94,7 @@ class FGL
 	 */
 	public static function crossPromotionEnabled():Bool
 	{
-		#if js 
+		#if (js && !noFGL)
 		return untyped fgl.crossPromotionEnabled; 
 		#else
 		return false;
@@ -109,7 +109,7 @@ class FGL
 	 */
 	public static function unlockEnabled():Bool
 	{
-		#if js 
+		#if (js && !noFGL)
 		return untyped fgl.unlockEnabled;
 		#else
 		return false;
@@ -122,7 +122,7 @@ class FGL
 	 */
 	public static function brandingEnabled():Bool
 	{
-		#if js 
+		#if (js && !noFGL)
 		return untyped fgl.brandingEnabled;
 		#else
 		return false;
@@ -137,7 +137,7 @@ class FGL
 	 */
 	public static function getBrandingLogo():String 
 	{
-		#if js 
+		#if (js && !noFGL)
 		return untyped fgl.getBrandingLogo();
 		#else
 		return "";
@@ -150,7 +150,7 @@ class FGL
 	 */
 	public static function handleBrandingClick() 
 	{
-		#if js 
+		#if (js && !noFGL)
 		untyped fgl.handleBrandingClick(); 
 		#end
 	}
@@ -161,7 +161,7 @@ class FGL
 	 */
 	public static function hasAchievement( name:String ):Bool
 	{
-		#if js 
+		#if (js && !noFGL)
 		return untyped fgl.hasAchievement( name ); 
 		#else
 		return false;
@@ -173,7 +173,7 @@ class FGL
 	 */
 	public static function grantAchievement( name:String ) 
 	{
-		#if js 
+		#if (js && !noFGL)
 		untyped fgl.grantAchievement( name ); 
 		#end
 	}
@@ -183,7 +183,7 @@ class FGL
 	 */
 	public static function submitScore( score:Int, leaderboardID:String = "" ) 
 	{
-		#if js 
+		#if (js && !noFGL)
 		untyped fgl.submitScore( score, leaderboardID ); 
 		#end
 	}
@@ -193,7 +193,7 @@ class FGL
 	 */
 	public static function displayScoreboard( leaderboardID:String = "" ) 
 	{
-		#if js 
+		#if (js && !noFGL)
 		untyped fgl.displayScoreboard( leaderboardID );
 		#end
 	}
